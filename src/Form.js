@@ -32,7 +32,7 @@ render(){
 			 onChange= {(event) => this.updateQuery(event.target.value)}/>
 		</div>
 			<ul className='contact-list'>
-		{this.props.contact.map((contact) => (
+		{showingContacts.map((contact) => (
 		<li key ={contact.id} className='contact-list-item'>
 		<div className="contact-avatar" style={{
 			background: `url${contact.avatarURL}`
