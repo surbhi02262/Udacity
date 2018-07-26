@@ -8,6 +8,7 @@ state={
 	query: ''
 }
 
+
 updateQuery = (query) => {this.setState({query: query.trim()})}
 
 
@@ -21,9 +22,8 @@ render(){
 	}
 	else
 	{
-		showingContacts =this.props.contacts
+		showingContacts =this.props.contact
 	}
-	//{console.log('showingContacts'+JSON.stringify(showingContacts))}
 	return(
 		<div>
 		<div className='search-field'>
